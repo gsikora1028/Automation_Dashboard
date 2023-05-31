@@ -9,12 +9,14 @@ script_paths = {
     "2": '/Users/gsikora/Desktop/2-Python_Programs/DocUploader/DocUploader.py',
     "3": '/Users/gsikora/Desktop/2-Python_Programs/File_Management/Download_File_Sorter.py',
     "4": '/Users/gsikora/Desktop/2-Python_Programs/File_Management/Auto-File_Deletion_Script.py',
-    "5": '/Users/gsikora/Desktop/2-Python_Programs/ADP_Time_Entry/ADP Timecard Automation Program.py'
+    "5": '/Users/gsikora/Desktop/2-Python_Programs/ADP_Time_Entry/ADP Timecard Automation Program.py',
+    "6": '/Users/gsikora/Desktop/2-Python_Programs/Batch_Template_Generator/BS_Email_Template.py',
+    "7": '/Users/gsikora/Desktop/2-Python_Programs/LIMS_Preference_Changer/LIMS_DEPT_Changer.py'
 }
 
 while True:
     # Prompt the user for the desired automation task
-    automation_task = input("\nWhat would you like to do?\n1. Data Verification\n2. Document Upload\n3. Sort Download Files\n4. Delete Files\n5. Time Card Entry\nEnter Value (1-5): ")
+    automation_task = input("\nWhat would you like to do?\n1. Data Verification\n2. Document Upload\n3. Sort Download Files\n4. Delete Files\n5. Time Card Entry\n6. Batch Email Template\n7. Change LIMS Department\nEnter Value (1-7): ")
 
     # Execute the script based on the user's choice
     if automation_task in script_paths:
