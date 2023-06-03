@@ -11,12 +11,14 @@ script_paths = {
     "4": '/Users/gsikora/Desktop/2-Python_Programs/File_Management/Auto-File_Deletion_Script.py',
     "5": '/Users/gsikora/Desktop/2-Python_Programs/ADP_Time_Entry/ADP Timecard Automation Program.py',
     "6": '/Users/gsikora/Desktop/2-Python_Programs/Batch_Template_Generator/BS_Email_Template.py',
-    "7": '/Users/gsikora/Desktop/2-Python_Programs/LIMS_Preference_Changer/LIMS_DEPT_Changer.py'
+    "7": '/Users/gsikora/Desktop/2-Python_Programs/LIMS_Preference_Changer/LIMS_DEPT_Changer.py',
+    "8": '/Users/gsikora/Desktop/2-Python_Programs/Data_Scrubbers/DV2_Scrubber.py',
+    "9": '/Users/gsikora/Desktop/2-Python_Programs/Data_Scrubbers/Emanifest_Upload_Metric_Scrubber.py'
 }
 
 while True:
     # Prompt the user for the desired automation task
-    automation_task = input("\nWhat would you like to do?\n1. Data Verification\n2. Document Upload\n3. Sort Download Files\n4. Delete Files\n5. Time Card Entry\n6. Batch Email Template\n7. Change LIMS Department\nEnter Value (1-7): ")
+    automation_task = input("\nWhat would you like to do?\n1. Data Verification\n2. Document Upload\n3. Sort Download Files\n4. Delete Files\n5. Time Card Entry\n6. Batch Email Template\n7. Change LIMS Department\n8. Clean DV2 Metric Data\n9. Clean EMAN Metric Data\nEnter Value (1-9): ")
 
     # Execute the script based on the user's choice
     if automation_task in script_paths:
@@ -26,7 +28,7 @@ while True:
         # Execute the script contents
         exec(script_contents)
     else:
-        print("Invalid input. Please enter a value between 1 and 5.")
+        print("Invalid input. Please enter a value between 1 and 7.")
     
     # Prompt the user if they want to access another script file
     user_input = input("\nComplete another automated task? (y/n): ")
