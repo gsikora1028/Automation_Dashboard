@@ -14,7 +14,7 @@ script_paths = {
     "7": '/Users/gsikora/Desktop/2-Python_Programs/LIMS_Preference_Changer/LIMS_DEPT_Changer.py',
     "8": '/Users/gsikora/Desktop/2-Python_Programs/Data_Scrubbers/DV2_Scrubber.py',
     "9": '/Users/gsikora/Desktop/2-Python_Programs/Data_Scrubbers/Emanifest_Upload_Metric_Scrubber.py',
-    "10": '/Users/gsikora/Desktop/2-Python_Programs/Adhoc Query Navigators/Adhoc_Query_Automation.py'
+    "10": '/Users/gsikora/Desktop/2-Python_Programs/Adhoc_Query_Navigators/Adhoc_Query_Automation.py'
 }
 
 while True:
