@@ -1,25 +1,41 @@
+# ********************************************************************************************
 # Program: Automation Dashboard
 # Author: Gabe Sikora
 # Date: 5/23/2023
-#-------------------------------
+# Function: Access all individual automation scripts for rapid task completion
+# ********************************************************************************************
 
 # Specify the script paths for each automation task
 script_paths = {
+    # LIMS DV2
     "1": '/Users/gsikora/Desktop/2-Python_Programs/LIMS_DV_Bot/LIMS_DV_Bot.py',
-    "2": '/Users/gsikora/Desktop/2-Python_Programs/DocUploader/DocUploader.py',
+    # Create New Daily Folder
+    "2": '/Users/gsikora/Desktop/2-Python_Programs/Daily_Folder_Generation/folder_generator.py',
+    # Download File Management
     "3": '/Users/gsikora/Desktop/2-Python_Programs/File_Management/Download_File_Sorter.py',
+    # File Deletion
     "4": '/Users/gsikora/Desktop/2-Python_Programs/File_Management/Auto-File_Deletion_Script.py',
-    "5": '/Users/gsikora/Desktop/2-Python_Programs/ADP_Time_Entry/ADP Timecard Automation Program.py',
-    "6": '/Users/gsikora/Desktop/2-Python_Programs/Batch_Template_Generator/BS_Email_Template.py',
-    "7": '/Users/gsikora/Desktop/2-Python_Programs/LIMS_Preference_Changer/LIMS_DEPT_Changer.py',
-    "8": '/Users/gsikora/Desktop/2-Python_Programs/Data_Scrubbers/DV2_Scrubber.py',
-    "9": '/Users/gsikora/Desktop/2-Python_Programs/Data_Scrubbers/Emanifest_Upload_Metric_Scrubber.py',
-    "10": '/Users/gsikora/Desktop/2-Python_Programs/Adhoc_Query_Navigators/Adhoc_Query_Automation.py'
+    # Adhoc Queries
+    "5": '/Users/gsikora/Desktop/2-Python_Programs/Adhoc_Query_Navigators/Adhoc_Query_Automation.py',
+    # DV2 Metric Scrubbing
+    "6": '/Users/gsikora/Desktop/2-Python_Programs/Data_Scrubbers/DV2_Scrubber.py',
+    # E-Manifest Metric Scrubbing
+    "7": '/Users/gsikora/Desktop/2-Python_Programs/Data_Scrubbers/Emanifest_Upload_Metric_Scrubber.py',
+    # Document Upload
+    "8": '/Users/gsikora/Desktop/2-Python_Programs/DocUploader/DocUploader.py',
+    # Shipment Ticket Creation
+    "9": "/Users/gsikora/Desktop/2-Python_Programs/Shipment_Ticket_Generator/shipment_ticket_generator.py",
+    # Change LIMS Preferences
+    "10": '/Users/gsikora/Desktop/2-Python_Programs/LIMS_Preference_Changer/LIMS_DEPT_Changer.py',
+    # ADP Timecard Entry
+    "11": '/Users/gsikora/Desktop/2-Python_Programs/ADP_Time_Entry/ADP Timecard Automation Program.py',
+    # Email Template Generator
+    "12": '/Users/gsikora/Desktop/2-Python_Programs/Batch_Template_Generator/BS_Email_Template.py'
 }
 
 while True:
     # Prompt the user for the desired automation task
-    automation_task = input("\nWhat would you like to do?\n1. Data Verification\n2. Document Upload\n3. Sort Download Files\n4. Delete Files\n5. Time Card Entry\n6. Batch Email Template\n7. Change LIMS Department\n8. Clean DV2 Metric Data\n9. Clean EMAN Metric Data\n10. Adhoc Query Data\nEnter Value (1-10): ")
+    automation_task = input("\nWhat would you like to do?\n1. Data Verification\n2. Create New Daily Folder\n3. Sort Download Files\n4. Delete Files\n5. Adhoc Query Metric Data\n6. Scrub DV2 Metric Data\n7. Scrub EMAN Metric Data\n8. Upload Documents\n9. Generate JIRA Shipment Ticket\n10. Change LIMS User Preferences\n11. ADP Timecard Entry\n12. Create Batch Email Tempate\nEnter Value (1-12): ")
 
     # Execute the script based on the user's choice
     if automation_task in script_paths:
