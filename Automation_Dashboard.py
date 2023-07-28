@@ -15,14 +15,14 @@ script_paths = {
     "3": '/Users/gsikora/Desktop/2-Python_Programs/File_Management/Download_File_Sorter.py',
     # File Deletion
     "4": '/Users/gsikora/Desktop/2-Python_Programs/File_Management/Auto-File_Deletion_Script.py',
-    # Adhoc Queries
-    "5": '/Users/gsikora/Desktop/2-Python_Programs/Adhoc_Query_Navigators/Adhoc_Query_Automation.py',
-    # DV2 Metric Scrubbing
-    "6": '/Users/gsikora/Desktop/2-Python_Programs/Data_Scrubbers/DV2_Scrubber.py',
-    # E-Manifest Metric Scrubbing
-    "7": '/Users/gsikora/Desktop/2-Python_Programs/Data_Scrubbers/Emanifest_Upload_Metric_Scrubber.py',
     # Document Upload
-    "8": '/Users/gsikora/Desktop/2-Python_Programs/DocUploader/DocUploader.py',
+    "5": '/Users/gsikora/Desktop/2-Python_Programs/DocUploader/DocUploader.py',
+    # Adhoc Queries
+    "6": '/Users/gsikora/Desktop/2-Python_Programs/Adhoc_Query_Navigators/Adhoc_Query_Automation.py',
+    # DV2 Metric Scrubbing
+    "7": '/Users/gsikora/Desktop/2-Python_Programs/Data_Scrubbers/DV2_Scrubber.py',
+    # E-Manifest Metric Scrubbing
+    "8": '/Users/gsikora/Desktop/2-Python_Programs/Data_Scrubbers/Emanifest_Upload_Metric_Scrubber.py',
     # Shipment Ticket Creation
     "9": "/Users/gsikora/Desktop/2-Python_Programs/Shipment_Ticket_Generator/shipment_ticket_generator.py",
     # Change LIMS Preferences
@@ -35,7 +35,7 @@ script_paths = {
 
 while True:
     # Prompt the user for the desired automation task
-    automation_task = input("\nWhat would you like to do?\n1. Data Verification\n2. Create New Daily Folder\n3. Sort Download Files\n4. Delete Files\n5. Adhoc Query Metric Data\n6. Scrub DV2 Metric Data\n7. Scrub EMAN Metric Data\n8. Upload Documents\n9. Generate JIRA Shipment Ticket\n10. Change LIMS User Preferences\n11. ADP Timecard Entry\n12. Create Batch Email Tempate\nEnter Value (1-12): ")
+    automation_task = input("\nWhat would you like to do?\n1. Data Verification\n2. Create New Daily Folder\n3. Sort Download Files\n4. Delete Files\n5. Document Upload\n6. Adhoc Queries \n7. Scrub DV2 Metric Data\n8. Scrub EMAN Metric Data\n9. Generate JIRA Shipment Ticket\n10. Change LIMS User Preferences\n11. ADP Timecard Entry\n12. Create Batch Email Template\nEnter Value (1-12): ")
 
     # Execute the script based on the user's choice
     if automation_task in script_paths:
