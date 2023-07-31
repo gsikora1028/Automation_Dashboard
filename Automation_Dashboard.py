@@ -30,12 +30,14 @@ script_paths = {
     # ADP Timecard Entry
     "11": '/Users/gsikora/Desktop/2-Python_Programs/ADP_Time_Entry/ADP Timecard Automation Program.py',
     # Email Template Generator
-    "12": '/Users/gsikora/Desktop/2-Python_Programs/Batch_Template_Generator/BS_Email_Template.py'
+    "12": '/Users/gsikora/Desktop/2-Python_Programs/Batch_Template_Generator/BS_Email_Template.py',
+    # Accessioning Guideline Formatter
+    "13": '/Users/gsikora/Desktop/2-Python_Programs/Accessioning_Guideline_Formatter/accessioning_doc_formatter'
 }
 
 while True:
     # Prompt the user for the desired automation task
-    automation_task = input("\nWhat would you like to do?\n1. Data Verification\n2. Create New Daily Folder\n3. Sort Download Files\n4. Delete Files\n5. Document Upload\n6. Adhoc Queries \n7. Scrub DV2 Metric Data\n8. Scrub EMAN Metric Data\n9. Generate JIRA Shipment Ticket\n10. Change LIMS User Preferences\n11. ADP Timecard Entry\n12. Create Batch Email Template\nEnter Value (1-12): ")
+    automation_task = input("\nWhat would you like to do?\n1. Data Verification\n2. Create New Daily Folder\n3. Sort Download Files\n4. Delete Files\n5. Document Upload\n6. Adhoc Queries \n7. Scrub DV2 Metric Data\n8. Scrub EMAN Metric Data\n9. Generate JIRA Shipment Ticket\n10. Change LIMS User Preferences\n11. ADP Timecard Entry\n12. Create Batch Email Template\n13. Reformat Accessioning Guidelines\nEnter Value (1-12): ")
 
     # Execute the script based on the user's choice
     if automation_task in script_paths:
