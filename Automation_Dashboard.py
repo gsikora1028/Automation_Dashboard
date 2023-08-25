@@ -32,12 +32,14 @@ script_paths = {
     # Email Template Generator
     "12": '/Users/gsikora/Desktop/2-Python_Programs/Batch_Template_Generator/BS_Email_Template.py',
     # Accessioning Guideline Formatter
-    "13": '/Users/gsikora/Desktop/2-Python_Programs/Accessioning_Guideline_Formatter/accessioning_doc_formatter'
+    "13": '/Users/gsikora/Desktop/2-Python_Programs/Accessioning_Guideline_Formatter/accessioning_doc_formatter',
+    # CV Template Generator
+    "14": '/Users/gsikora/Desktop/2-Python_Programs/AutoCV/cv_creator.py'
 }
 
 while True:
     # Prompt the user for the desired automation task
-    automation_task = input("\nWhat would you like to do?\n1. Data Verification\n2. Create New Daily Folder\n3. Sort Download Files\n4. Delete Files\n5. Document Upload\n6. Adhoc Queries \n7. Scrub DV2 Metric Data\n8. Scrub EMAN Metric Data\n9. Generate JIRA Shipment Ticket\n10. Change LIMS User Preferences\n11. ADP Timecard Entry\n12. Create Batch Email Template\n13. Reformat Accessioning Guidelines\nEnter Value (1-13): ")
+    automation_task = input("\nWhat would you like to do?\n1. Data Verification\n2. Create New Daily Folder\n3. Sort Download Files\n4. Delete Files\n5. Document Upload\n6. Adhoc Queries \n7. Scrub DV2 Metric Data\n8. Scrub EMAN Metric Data\n9. Generate JIRA Shipment Ticket\n10. Change LIMS User Preferences\n11. ADP Timecard Entry\n12. Create Batch Email Template\n13. Reformat Accessioning Guidelines\n14. Modify CV for another Job\nEnter Value (1-14): ")
 
     # Execute the script based on the user's choice
     if automation_task in script_paths:
