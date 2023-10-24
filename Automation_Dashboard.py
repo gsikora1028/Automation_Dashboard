@@ -49,7 +49,7 @@ while True:
         # Execute the script contents
         exec(script_contents)
     else:
-        print("Invalid input. Please enter a value between 1 and 10.")
+        print("Invalid input. Please enter a value between 1 and 14.")
     
     # Prompt the user if they want to access another script file
     user_input = input("\nComplete another automated task? (y/n): ")
